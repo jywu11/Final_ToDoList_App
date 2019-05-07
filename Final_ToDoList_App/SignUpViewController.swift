@@ -27,6 +27,7 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
             // Checks if all the fields have been filled out. If empty, show prompt.
         else if signUpPasswordTextField.text != signUpConfirmPasswordTextField.text {
             displayMessage(title: "Passwords Do Not Match", message: "Passwords do not match. Please try again.", id: "ok")
+            
         }
             
             // If no errors, create the account in Firebase and store user's first name into UserDefaults.
